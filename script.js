@@ -12,8 +12,8 @@ document.getElementById('correlationForm').addEventListener('submit', function(e
     }
 
     const pearson = ss.sampleCorrelation(xValues, yValues);
-    const spearman = ss.spearmanRankCorrelation(xValues, yValues);
+
+    console.log(pearson);
 
     document.getElementById('pearson').textContent = pearson.toFixed(4);
-    document.getElementById('spearman').textContent = spearman.toFixed(4);
 });
